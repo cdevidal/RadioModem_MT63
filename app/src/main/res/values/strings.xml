@@ -95,5 +95,6 @@
     <string name="help_body">For setup instructions and troubleshooting, please visit the project documentation.</string>
     <string name="label_ber_placeholder">BER: --</string>
     <string name="label_snr_placeholder">SNR: -- dB</string>
+    <string name="selftest">Self Test</string>
 </resources>
 

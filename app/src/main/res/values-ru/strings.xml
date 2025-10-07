@@ -139,6 +139,7 @@
     <string name="help_menu">Справка</string>
     <string name="label_ber_placeholder">BER: --</string>
     <string name="label_snr_placeholder">SNR: -- дБ</string>
+    <string name="selftest">Самотестирование</string>
     <string name="profile_status_title">Статус профиля</string>
     <string name="profile_status_line_active">Активен (%1$s)</string>
     <string name="profile_status_line_modified">Изменён (%1$s)</string>
