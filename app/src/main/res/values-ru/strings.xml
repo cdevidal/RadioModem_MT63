@@ -137,6 +137,7 @@
     <string name="help">Справка</string>
     <string name="help_title">Справка / FAQ</string>
     <string name="help_menu">Справка</string>
+    <string name="menu_help">Справка</string>
     <string name="label_ber_placeholder">BER: --</string>
     <string name="label_snr_placeholder">SNR: -- дБ</string>
     <string name="selftest">Самотестирование</string>
