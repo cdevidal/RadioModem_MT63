@@ -151,7 +151,6 @@
     <string name="pref_theme_summary">Оформление приложения</string>
     <string name="pref_mt63_fec_title">Коррекция ошибок (FEC)</string>
     <string name="pref_mt63_fec_summary">Мягкое декодирование на основе Адамара для ростоустойчивости</string>
-    <string name="selftest">Самотест</string>
     <string name="spectrum">Спектр</string>
     <string name="rx_scope">Осциллограф RX</string>
     <string name="export_log">Экспорт журнала</string>
