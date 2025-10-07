@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{font-family:sans-serif; padding:16px; line-height:1.45}
+h1,h2{margin-top:1.2em} code{background:#eee;padding:0 4px}
+ul{margin-left:1.2em}
+</style></head><body>
+<h1>Help / FAQ</h1>
+<h2 id="quickstart">Quick Start</h2>
+<ol>
+<li>Open the app, press <b>Start</b> to run the modem service.</li>
+<li>Connect your client via KISS/TCP to <code>127.0.0.1:8100</code> (or your bind/port).</li>
+<li>Watch RX/TX levels, SNR/BER. Avoid clipping on RX.</li>
+</ol>
+
+<h2 id="profiles">Profiles</h2>
+<p>Use <b>Settings → Profile</b> to pick a preset. Each profile sets FFT, CP, Carriers, Pilots, PLL, Soft-FEC, Interleave and TX delay/tail.
+You may tweak parameters afterwards (status becomes <i>Modified</i>).</p>
+
+<h2 id="mt63">MT63 Parameters</h2>
+<ul>
+<li><b>FFT size</b>: larger → more robustness, higher CPU/latency.</li>
+<li><b>Cyclic Prefix (CP)</b>: guards against ISI; larger → more delay.</li>
+<li><b>Carriers</b>: active subcarriers count.</li>
+<li><b>Pilots / PLL</b>: synchronization and phase/frequency tracking.</li>
+<li><b>Soft-FEC</b>: soft Hadamard-64 improves BER in noise.</li>
+<li><b>Interleave</b>: Legacy / Short (column-major) / Long (diagonal spread).</li>
+</ul>
+
+<h2 id="kiss">Sideband/Reticulum (KISS/TCP)</h2>
+<p>Bind address/port in Settings; ensure client points to the same pair.</p>
+
+<h2 id="quality">Signal Quality</h2>
+<p>Avoid RX clipping; aim for steady mid-level. Use Statistics screen to see SNR/BER trends.</p>
+
+<h2 id="diagnostics">Diagnostics</h2>
+<p>Use Log to export events; enable higher levels only when needed.</p>
+
+<!--ANCHOR-->
+</body></html>

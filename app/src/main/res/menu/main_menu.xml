@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_export_log" android:title="@string/export_log"/>
+    <item android:id="@+id/menu_selftest" android:title="@string/selftest" />
+</menu>
+

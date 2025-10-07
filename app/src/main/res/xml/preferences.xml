@@ -1,0 +1,98 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<ListPreference
+        android:key="pref_profile_select"
+        android:title="@string/pref_profile_select_title"
+        android:summary="@string/pref_profile_select_summary"
+        android:defaultValue="custom"
+        android:entries="@array/profile_entries"
+        android:entryValues="@array/profile_values"/>
+
+    <Preference
+        android:key="pref_profile_status"
+        android:title="@string/profile_status_title"
+        android:summary="@string/profile_status_line_custom"
+        android:selectable="false" />
+
+
+    <PreferenceCategory android:title="@string/title_audio">
+        <ListPreference android:key="pref_sample_rate"
+            android:defaultValue="48000"
+            android:entries="@array/sample_rates" android:entryValues="@array/sample_rates" android:title="@string/pref_sample_rate_title" android:summary="@string/pref_sample_rate_summary"/>
+        <SeekBarPreference android:key="pref_tx_level"
+            android:min="0" android:max="100" android:defaultValue="80" android:title="@string/pref_tx_level_title" android:summary="@string/pref_tx_level_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/title_mt63">
+        <ListPreference android:key="pref_mt63_profile"
+
+            android:defaultValue="low_latency" android:entries="@array/mt63_profiles_names" android:entryValues="@array/mt63_profiles_values" android:title="@string/pref_profile_title" android:summary="@string/pref_profile_summary"/>
+        <EditTextPreference android:key="pref_mt63_fft"
+            android:defaultValue="512" android:title="@string/pref_fft_title" android:summary="@string/pref_fft_summary"/>
+        <EditTextPreference android:key="pref_mt63_cp"
+            android:defaultValue="64" android:title="@string/pref_cp_title" android:summary="@string/pref_cp_summary"/>
+        <EditTextPreference android:key="pref_mt63_carriers"
+            android:defaultValue="48" android:title="@string/pref_carriers_title" android:summary="@string/pref_carriers_summary"/>
+        <SwitchPreferenceCompat android:key="pref_mt63_pilots" android:title="Pilot Tones" android:summary="Pilots for timing/frequency/phase tracking." android:defaultValue="true"/>
+        <SwitchPreferenceCompat android:key="pref_rx_fec" android:title="RX FEC (recommended)" android:summary="Use soft-decision Viterbi on receive." android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/title_kiss" android:key="kiss">
+        <EditTextPreference android:key="pref_kiss_bind"
+            android:defaultValue="127.0.0.1" android:title="@string/pref_bind_title" android:summary="@string/pref_bind_summary"/>
+        <EditTextPreference android:key="pref_kiss_port" android:defaultValue="8100" android:title="@string/pref_port_title" android:summary="@string/pref_port_summary"/>
+        <SwitchPreferenceCompat android:key="pref_kiss_nodelay" android:defaultValue="true" android:title="@string/pref_nodelay_title" android:summary="@string/pref_nodelay_summary"/>
+        <SwitchPreferenceCompat android:key="pref_kiss_keepalive" android:defaultValue="true" android:title="@string/pref_keepalive_title" android:summary="@string/pref_keepalive_summary"/>
+        <EditTextPreference android:key="pref_kiss_max_frame" android:defaultValue="4096" android:title="@string/pref_maxframe_title" android:summary="@string/pref_maxframe_summary"/>
+    </PreferenceCategory>
+
+        <SwitchPreferenceCompat
+            android:key="pref_use_pilots"
+
+            android:defaultValue="true" android:title="@string/pref_pilots_title" android:summary="@string/pref_pilots_summary"/>
+        <SwitchPreferenceCompat
+            android:key="pref_use_pll"
+
+            android:defaultValue="true" android:title="@string/pref_pll_title" android:summary="@string/pref_pll_summary"/>
+        <SwitchPreferenceCompat
+            android:key="pref_use_softfec"
+
+            android:defaultValue="true" android:title="@string/pref_softfec_title" android:summary="@string/pref_softfec_summary"/>
+        <ListPreference
+            android:key="pref_interleave_mode"
+
+            android:defaultValue="legacy"
+            android:entries="@array/interleave_entries"
+            android:entryValues="@array/interleave_values" android:title="@string/pref_interleave_title" android:summary="@string/pref_interleave_summary"/>
+    <PreferenceCategory android:title="@string/title_service">
+    <ListPreference
+        android:key="pref_app_theme"
+        android:title="@string/pref_theme_title"
+        android:summary="@string/pref_theme_summary"
+        android:entries="@array/theme_entries"
+        android:entryValues="@array/theme_values"
+        android:defaultValue="dark"/>
+    <ListPreference
+        android:key="pref_app_language"
+        android:title="@string/pref_language_title"
+        android:summary="@string/pref_language_summary"
+        android:entries="@array/lang_entries"
+        android:entryValues="@array/lang_values"
+        android:defaultValue="en"/>
+</PreferenceCategory>
+
+<PreferenceCategory android:title="@string/title_decoder">
+    <SwitchPreferenceCompat
+        android:key="pref_mt63_fec"
+        android:title="@string/pref_mt63_fec_title"
+        android:summary="@string/pref_mt63_fec_summary"
+        android:defaultValue="false" />
+    <ListPreference
+        android:key="pref_mt63_interleave"
+        android:title="@string/pref_mt63_interleave_title"
+        android:summary="@string/pref_mt63_interleave_summary"
+        android:entries="@array/interleave_entries"
+        android:entryValues="@array/interleave_values"
+        android:defaultValue="legacy" />
+</PreferenceCategory>
+</PreferenceScreen>
+

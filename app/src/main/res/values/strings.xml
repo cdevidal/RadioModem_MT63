@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Modem63</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="settings">Settings</string>
+    <string name="status_idle">Idle</string>
+    <string name="status_running">Running</string>
+    <string name="service_channel_name">MT63 Modem Service</string>
+    <string name="service_channel_desc">Foreground audio modem service</string>
+    <string name="notif_title">Modem63 service is active</string>
+    <string name="notif_text">MT63 transmit/receive</string>
+
+    <string name="title_audio">Audio</string>
+    <string name="title_mt63">MT63 Mode</string>
+    <string name="title_security">Security</string>
+    <string name="title_service">Service</string>
+    <string name="title_kiss">KISS over TCP</string>
+    <string name="desc_kiss">Local TCP KISS server for Sideband/Reticulum</string>
+    <string name="title_diag">Diagnostics</string>
+
+    <string name="pref_sample_rate_title">Sample Rate</string>
+    <string name="pref_sample_rate_summary">Hz. 48000 is recommended for MT63‑2000.</string>
+    <string name="pref_tx_level_title">TX Level</string>
+    <string name="pref_tx_level_summary">Output amplitude (0–100). Higher may clip; start around 70–80.</string>
+    <string name="pref_center_freq_title">Center Frequency (Hz)</string>
+    <string name="pref_center_freq_summary">Audio center for the MT63 band. 1500 Hz is commonly used.</string>
+
+    <string name="pref_mt63_mode_title">Bandwidth</string>
+    <string name="pref_mt63_mode_summary">MT63 bandwidth profile: 500, 1000 or 2000 Hz (64 DBPSK tones).</string>
+    <string name="pref_mt63_interleave_title">Interleave</string>
+    <string name="pref_mt63_interleave_summary">Short = 64 symbols (lower latency). Long = 128 symbols (higher robustness).</string>
+    <string name="pref_mt63_compat_title">Compatibility</string>
+    <string name="pref_mt63_compat_summary">Enable classic MT63 framing/spreading (recommended). Disable for experiments only.</string>
+
+    <string name="preset_ultra_title">Preset: Ultra‑low latency</string>
+    <string name="preset_ultra_summary">MT63‑2000 + Short, SR=48000, Center=1500, low‑latency buffers. Apply all at once.</string>
+
+    <string name="pref_kiss_bind_title">Bind Address</string>
+    <string name="pref_kiss_bind_summary">Listen address for the KISS TCP server. 127.0.0.1 limits access to this device.</string>
+    <string name="pref_kiss_port_title">Port</string>
+    <string name="pref_kiss_port_summary">TCP port for KISS. Reticulum examples often use 8001.</string>
+    <string name="pref_kiss_nodelay_title">Disable Nagle (TCP_NODELAY)</string>
+    <string name="pref_kiss_nodelay_summary">Send small frames immediately (reduces latency at the cost of overhead).</string>
+    <string name="pref_kiss_keepalive_title">TCP Keepalive</string>
+    <string name="pref_kiss_keepalive_summary">Enable TCP keepalive probes to quickly detect disconnects.</string>
+    <string name="pref_kiss_max_frame_title">Max KISS Frame (bytes)</string>
+    <string name="pref_kiss_max_frame_summary">Reject frames larger than this limit (sanity check).</string>
+    <string name="pref_kiss_auth_title">Require Password</string>
+    <string name="pref_kiss_auth_summary">If enabled, clients must send the password before exchanging KISS (non‑standard).</string>
+    <string name="pref_kiss_password_title">Password</string>
+    <string name="pref_kiss_password_summary">Shared secret for client authentication.</string>
+    <string name="pref_kiss_mdns_title">Advertise via mDNS</string>
+    <string name="pref_kiss_mdns_summary">Publish the service on the local network (NSD, type _kiss._tcp).</string>
+
+    <string name="pref_wakelock_title">Keep CPU Awake</string>
+    <string name="pref_wakelock_summary">Hold a partial wake lock while the modem is running.</string>
+    <string name="pref_wifilock_title">Keep Wi‑Fi Awake</string>
+    <string name="pref_wifilock_summary">Hold a Wi‑Fi lock (useful when clients connect via Wi‑Fi).</string>
+    <string name="pref_low_latency_title">Low‑latency TX/RX buffers</string>
+    <string name="pref_low_latency_summary">Minimal audio buffers and 1‑symbol I/O to reduce latency (may increase XRuns).</string>
+
+    <string name="pref_diag_title">On‑screen Diagnostics</string>
+    <string name="pref_diag_summary">Show RX level, SNR, estimated CFO, BER, clients and TX/RX counters.</string>
+
+    <string name="tips_title">Tip</string>
+    <string name="tips_latency">Recommended low‑latency profile: MT63‑2000 Short, SR=48000, Center=1500 Hz</string>
+
+    <string-array name="sample_rates">
+        <item>48000</item>
+        <item>44100</item>
+        <item>32000</item>
+    </string-array>
+    <string-array name="mt63_modes_names">
+        <item>MT63‑500</item>
+        <item>MT63‑1000</item>
+        <item>MT63‑2000</item>
+    </string-array>
+    <string-array name="mt63_modes_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+    </string-array>
+    <string-array name="interleave_names">
+        <item>Short (64 sym)</item>
+        <item>Long (128 sym)</item>
+    </string-array>
+    <string-array name="interleave_values">
+        <item>short</item>
+        <item>long</item>
+    </string-array>
+</resources>
+

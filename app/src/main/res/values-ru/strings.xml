@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">Modem63</string>
+
+    <!-- Главный экран -->
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="settings">Настройки</string>
+    <string name="status_idle">Ожидание</string>
+    <string name="status_running">Работает</string>
+
+    <!-- Уведомления -->
+    <string name="service_channel_name">Сервис модема MT63</string>
+    <string name="service_channel_desc">Фоновый сервис аудио‑модема MT63</string>
+    <string name="notif_title">Сервис Modem63 активен</string>
+    <string name="notif_text">Передача/приём MT63</string>
+
+    <!-- Категории -->
+    <string name="title_audio">Аудио</string>
+    <string name="title_mt63">Режим MT63</string>
+    <string name="title_security">Безопасность</string>
+    <string name="title_service">Сервис</string>
+    <string name="title_kiss">KISS по TCP</string>
+    <string name="desc_kiss">Локальный TCP‑сервер KISS для Sideband/Reticulum</string>
+    <string name="title_diag">Диагностика</string>
+
+    <!-- Аудио -->
+    <string name="pref_sample_rate_title">Частота дискретизации</string>
+    <string name="pref_sample_rate_summary">Гц. Рекомендуется 48000 для MT63‑2000.</string>
+    <string name="pref_tx_level_title">Уровень TX</string>
+    <string name="pref_tx_level_summary">Амплитуда выхода (0–100). Высокие значения могут вызывать клиппинг. Начните с 70–80.</string>
+    <string name="pref_center_freq_title">Центральная частота (Гц)</string>
+    <string name="pref_center_freq_summary">Центр звуковой полосы MT63. Обычно 1500 Гц (как в NBEMS/FLdigi).</string>
+
+    <!-- MT63 -->
+    <string name="pref_mt63_mode_title">Ширина полосы</string>
+    <string name="pref_mt63_mode_summary">Профиль MT63: 500, 1000 или 2000 Гц (64 тона DBPSK).</string>
+    <string name="pref_mt63_interleave_title">Интерливерация</string>
+    <string name="pref_mt63_interleave_summary">Short = 64 символа (меньше задержка), Long = 128 символов (выше устойчивость).</string>
+    <string name="pref_mt63_compat_title">Совместимость</string>
+    <string name="pref_mt63_compat_summary">Классический формат MT63 (рекомендуется). Отключайте только для экспериментов.</string>
+
+    <!-- Пресет -->
+    <string name="preset_ultra_title">Профиль: ультра‑низкая задержка</string>
+    <string name="preset_ultra_summary">MT63‑2000 + Short, SR=48000, Center=1500, Low‑latency буферы. Применить все параметры сразу.</string>
+
+    <!-- KISS -->
+    <string name="pref_kiss_bind_title">Адрес прослушивания</string>
+    <string name="pref_kiss_bind_summary">Адрес TCP‑сервера KISS. 127.0.0.1 — только на этом устройстве.</string>
+    <string name="pref_kiss_port_title">Порт</string>
+    <string name="pref_kiss_port_summary">TCP‑порт для KISS. В Reticulum часто используется 8001.</string>
+    <string name="pref_kiss_nodelay_title">Отключить Nagle (TCP_NODELAY)</string>
+    <string name="pref_kiss_nodelay_summary">Отправлять мелкие фреймы немедленно (меньше задержка, больше накладные расходы).</string>
+    <string name="pref_kiss_keepalive_title">TCP Keepalive</string>
+    <string name="pref_kiss_keepalive_summary">Включить keepalive‑пробы TCP для быстрого обнаружения обрыва.</string>
+    <string name="pref_kiss_max_frame_title">Максимальный размер KISS‑кадра (байт)</string>
+    <string name="pref_kiss_max_frame_summary">Ограничение на размер входящего кадра (санитарная мера).</string>
+    <string name="pref_kiss_auth_title">Требовать пароль</string>
+    <string name="pref_kiss_auth_summary">Если включено — клиент должен отправить пароль перед обменом KISS (нестандартно).</string>
+    <string name="pref_kiss_password_title">Пароль</string>
+    <string name="pref_kiss_password_summary">Общий секрет для аутентификации клиента.</string>
+    <string name="pref_kiss_mdns_title">Рекламировать через mDNS</string>
+    <string name="pref_kiss_mdns_summary">Публиковать службу в локальной сети (NSD, тип _kiss._tcp).</string>
+
+    <!-- Сервис -->
+    <string name="pref_wakelock_title">Не давать CPU спать</string>
+    <string name="pref_wakelock_summary">Держать частичный Wake Lock во время работы модема.</string>
+    <string name="pref_wifilock_title">Не давать Wi‑Fi засыпать</string>
+    <string name="pref_wifilock_summary">Держать Wi‑Fi Lock (актуально при клиенте по Wi‑Fi).</string>
+    <string name="pref_low_latency_title">Low‑latency буферы TX/RX</string>
+    <string name="pref_low_latency_summary">Минимальные аудио‑буферы и обмен по 1 символу для снижения задержки (возможны XRuns на некоторых устройствах).</string>
+
+    <!-- Диагностика -->
+    <string name="pref_diag_title">Экран диагностики</string>
+    <string name="pref_diag_summary">Показывать уровень RX, SNR, оценку CFO, BER, клиентов и счётчики TX/RX.</string>
+
+    <!-- Подсказка -->
+    <string name="tips_title">Подсказка</string>
+    <string name="tips_latency">Рекомендуемый профиль минимальной задержки: MT63‑2000 Short, SR=48000, Center=1500 Hz</string>
+
+    <!-- Массивы -->
+    <string-array name="sample_rates">
+        <item>48000</item>
+        <item>44100</item>
+        <item>32000</item>
+    </string-array>
+    <string-array name="mt63_modes_names">
+        <item>MT63‑500</item>
+        <item>MT63‑1000</item>
+        <item>MT63‑2000</item>
+    </string-array>
+    <string-array name="mt63_modes_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+    </string-array>
+    <string-array name="interleave_names">
+        <item>Short (64 симв.)</item>
+        <item>Long (128 симв.)</item>
+    </string-array>
+    <string-array name="interleave_values">
+        <item>short</item>
+        <item>long</item>
+    </string-array>
+    <string name="pref_profile_title">Профиль MT63</string>
+    <string name="pref_profile_summary">Набор FFT/CP/Carriers. Выберите сбалансированный/робастный/низкая задержка.</string>
+    <string name="pref_fft_title">Размер FFT</string>
+    <string name="pref_fft_summary">Степень двойки (напр., 512/1024/2048). Больше — выше устойчивость, но больше задержка/CPU.</string>
+    <string name="pref_cp_title">Циклический префикс (семплы)</string>
+    <string name="pref_cp_summary">Длина защитного интервала. Больше — меньше межсимвольных искажений, но больше задержка/CPU.</string>
+    <string name="pref_carriers_title">Количество поднесущих</string>
+    <string name="pref_carriers_summary">Число активных поднесущих, используемых для QPSK-символов.</string>
+    <string name="pref_bind_title">Адрес привязки</string>
+    <string name="pref_bind_summary">Интерфейс для KISS/TCP сервера (например, 127.0.0.1).</string>
+    <string name="pref_port_title">Порт</string>
+    <string name="pref_port_summary">Порт KISS/TCP для клиентов (например, 8100).</string>
+    <string name="pref_maxframe_title">Макс. размер кадра</string>
+    <string name="pref_maxframe_summary">Максимальный допустимый размер KISS-кадра (байт). Защита от неверного входа.</string>
+    <string name="pref_nodelay_title">TCP_NODELAY</string>
+    <string name="pref_nodelay_summary">Отключить Nagle для снижения задержки на малых кадрах.</string>
+    <string name="pref_keepalive_title">TCP keepalive</string>
+    <string name="pref_keepalive_summary">Включить keepalive для обнаружения «мертвых» соединений.</string>
+    <string name="pref_pilots_title">Пилоты</string>
+    <string name="pref_pilots_summary">Включить пилот-тоны для синхронизации и оценки канала.</string>
+    <string name="pref_pll_title">PLL</string>
+    <string name="pref_pll_summary">Включить слежение по фазе/частоте (PLL) для когерентных решений QPSK.</string>
+    <string name="pref_softfec_title">Soft-FEC (Хадамард)</string>
+    <string name="pref_softfec_summary">Использовать мягкое декодирование Hadamard-64 с интерливером для снижения BER в шуме.</string>
+    <string name="pref_interleave_title">Режим интерливера</string>
+    <string name="pref_interleave_summary">Отображение бит во времени/частоте. Legacy=без перестановки, Short=по столбцам, Long=диагональное разнесение.</string>
+    <string name="pref_profile_select_title">Профиль</string>
+    <string name="pref_profile_select_summary">Применить пресет параметров MT63 (FFT/CP/Carriers/Pilots/PLL/Soft-FEC/Interleave). После можно вручную изменить.</string>
+    <string name="profile_status_active">Активен</string>
+    <string name="profile_status_modified">Изменён</string>
+    <string name="profile_status_custom">Пользовательский</string>
+    <string name="profile_apply_confirm_title">Применить профиль</string>
+    <string name="profile_apply_confirm_msg">Будут установлены значения FFT, CP, Carriers, Pilots, PLL, Soft-FEC, Interleave и TX delay/tail согласно профилю.</string>
+    <string name="profile_apply">Применить</string>
+    <string name="profile_cancel">Отмена</string>
+    <string name="help_title">Справка / FAQ</string>
+    <string name="help_menu">Справка</string>
+    <string name="profile_status_title">Статус профиля</string>
+    <string name="profile_status_line_active">Активен (%1$s)</string>
+    <string name="profile_status_line_modified">Изменён (%1$s)</string>
+    <string name="profile_status_line_custom">Пользовательский</string>
+    <string name="menu_help">Справка</string>
+    <string name="pref_language_title">Язык</string>
+    <string name="pref_language_summary">Язык приложения (требуется перезапуск)</string>
+    <string name="pref_theme_title">Тема</string>
+    <string name="pref_theme_summary">Оформление приложения</string>
+    <string name="pref_mt63_fec_title">Коррекция ошибок (FEC)</string>
+    <string name="pref_mt63_fec_summary">Мягкое декодирование на основе Адамара для ростоустойчивости</string>
+    <string name="selftest">Самотест</string>
+    <string name="spectrum">Спектр</string>
+    <string name="rx_scope">Осциллограф RX</string>
+</resources>
+

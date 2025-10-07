@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="interleave_entries">
+        <item>Legacy (совместимость)</item>
+        <item>Short (короткий)</item>
+        <item>Long (длинный)</item>
+    </string-array>
+    <!-- entryValues are locale-agnostic; defined once in values/arrays.xml -->
+
+    <string-array name="profile_entries">
+        <item>Сбалансированный</item>
+        <item>Робастный</item>
+        <item>Низкая задержка</item>
+        <item>Пользовательский</item>
+    </string-array>
+    <string-array name="theme_entries">
+        <item>Системная</item>
+        <item>Тёмная</item>
+        <item>Светлая</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>system</item>
+        <item>dark</item>
+        <item>light</item>
+    </string-array>
+    <string-array name="lang_entries">
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+    <string-array name="lang_values">
+        <item>en</item>
+        <item>ru</item>
+    </string-array>
+    <string-array name="interleave_values">
+        <item>legacy</item>
+        <item>short</item>
+        <item>long</item>
+    </string-array>
+</resources>
+
+

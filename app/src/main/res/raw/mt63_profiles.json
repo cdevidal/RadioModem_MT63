@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "profiles": [
+    {
+      "id": "balanced",
+      "name_en": "Balanced",
+      "name_ru": "Сбалансированный",
+      "desc_en": "Good compromise between robustness and latency.",
+      "desc_ru": "Хороший баланс между устойчивостью и задержкой.",
+      "fft": 1024,
+      "cp": 128,
+      "carriers": 64,
+      "pilots": true,
+      "pll": true,
+      "softfec": true,
+      "interleave": "short",
+      "txdelay_ms": 150,
+      "txtail_ms": 80
+    },
+    {
+      "id": "robust",
+      "name_en": "Robust",
+      "name_ru": "Робастный",
+      "desc_en": "Maximum robustness, higher latency.",
+      "desc_ru": "Максимальная помехоустойчивость, выше задержка.",
+      "fft": 2048,
+      "cp": 256,
+      "carriers": 64,
+      "pilots": true,
+      "pll": true,
+      "softfec": true,
+      "interleave": "long",
+      "txdelay_ms": 200,
+      "txtail_ms": 120
+    },
+    {
+      "id": "lowlat",
+      "name_en": "Low-latency",
+      "name_ru": "Низкая задержка",
+      "desc_en": "Minimal latency, moderate robustness.",
+      "desc_ru": "Минимальная задержка, умеренная устойчивость.",
+      "fft": 512,
+      "cp": 64,
+      "carriers": 48,
+      "pilots": true,
+      "pll": true,
+      "softfec": false,
+      "interleave": "legacy",
+      "txdelay_ms": 80,
+      "txtail_ms": 40
+    }
+  ]
+}

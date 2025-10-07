@@ -1,0 +1,6 @@
+
+<resources>
+    <style name="Theme.RadioModemMT63.Light" parent="Theme.Material3.Dark.NoActionBar"/>
+    <style name="Theme.RadioModemMT63.Dark" parent="Theme.Material3.Dark.NoActionBar"/>
+</resources>
+

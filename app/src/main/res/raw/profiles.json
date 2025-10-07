@@ -1,0 +1,40 @@
+{
+  "profiles": [
+    {
+      "id": "mt63_2000_long",
+      "name_en": "MT63-2000 (Long)",
+      "name_ru": "MT63-2000 (Длинный)",
+      "fft": 2048,
+      "cp": 192,
+      "carriers": 64,
+      "pilots": true,
+      "fec": true,
+      "interleave": "long",
+      "sample_rate": 48000
+    },
+    {
+      "id": "mt63_2000_short",
+      "name_en": "MT63-2000 (Short)",
+      "name_ru": "MT63-2000 (Короткий)",
+      "fft": 1024,
+      "cp": 96,
+      "carriers": 64,
+      "pilots": true,
+      "fec": true,
+      "interleave": "short",
+      "sample_rate": 48000
+    },
+    {
+      "id": "balanced",
+      "name_en": "Balanced",
+      "name_ru": "Сбалансированный",
+      "fft": 1024,
+      "cp": 96,
+      "carriers": 64,
+      "pilots": true,
+      "fec": false,
+      "interleave": "legacy",
+      "sample_rate": 48000
+    }
+  ]
+}
