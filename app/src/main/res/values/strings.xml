@@ -97,5 +97,27 @@
     <string name="label_ber_placeholder">BER: --</string>
     <string name="label_snr_placeholder">SNR: -- dB</string>
     <string name="selftest">Self Test</string>
+
+    <!-- Preferences -->
+    <string name="pref_profile_select_title">MT63 Profile</string>
+    <string name="pref_profile_select_summary">Select preset: Balanced, Robust, or Low-latency</string>
+    <string name="pref_profile_title">Profile</string>
+    <string name="pref_profile_summary">MT63 configuration preset</string>
+    <string name="pref_fft_title">FFT Size</string>
+    <string name="pref_fft_summary">Power of 2 (e.g., 512/1024/2048). Larger = more robust but higher latency/CPU</string>
+    <string name="pref_cp_title">Cyclic Prefix (samples)</string>
+    <string name="pref_cp_summary">Guard interval samples. Higher = more multipath tolerance</string>
+    <string name="pref_carriers_title">Number of Carriers</string>
+    <string name="pref_carriers_summary">OFDM subcarriers (typically 64 for MT63)</string>
+    <string name="pref_bind_title">Bind Address</string>
+    <string name="pref_bind_summary">KISS server listen address (127.0.0.1 = localhost only)</string>
+    <string name="pref_port_title">Port</string>
+    <string name="pref_port_summary">KISS server TCP port (commonly 8001 for Reticulum)</string>
+    <string name="pref_pilots_title">Pilot Tones</string>
+    <string name="pref_pilots_summary">Enable pilot carriers for frequency/phase tracking</string>
+    <string name="pref_pll_title">PLL Bandwidth</string>
+    <string name="pref_pll_summary">Phase-locked loop tracking bandwidth</string>
+    <string name="pref_interleave_title">Interleave Mode</string>
+    <string name="pref_interleave_summary">Short (64 sym, lower latency) or Long (128 sym, more robust)</string>
 </resources>
 
