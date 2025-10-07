@@ -133,6 +133,7 @@
     <string name="profile_apply">Применить</string>
     <string name="profile_cancel">Отмена</string>
     <string name="stats">Статистика</string>
+    <string name="log">Журнал</string>
     <string name="help">Справка</string>
     <string name="help_title">Справка / FAQ</string>
     <string name="help_menu">Справка</string>

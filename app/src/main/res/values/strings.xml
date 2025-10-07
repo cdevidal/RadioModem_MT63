@@ -88,6 +88,7 @@
     <string name="export_log">Export Log</string>
     <string name="statistics">Statistics</string>
     <string name="stats">Stats</string>
+    <string name="log">Log</string>
     <string name="help">Help</string>
     <string name="help_menu">Help</string>
     <string name="help_title">Help / FAQ</string>
