@@ -145,7 +145,6 @@
     <string name="profile_status_line_active">Активен (%1$s)</string>
     <string name="profile_status_line_modified">Изменён (%1$s)</string>
     <string name="profile_status_line_custom">Пользовательский</string>
-    <string name="menu_help">Справка</string>
     <string name="pref_language_title">Язык</string>
     <string name="pref_language_summary">Язык приложения (требуется перезапуск)</string>
     <string name="pref_theme_title">Тема</string>
