@@ -88,5 +88,9 @@
         <item>short</item>
         <item>long</item>
     </string-array>
+
+    <string name="export_log">Export Log</string>
+    <string name="statistics">Statistics</string>
+    <string name="help_menu">Help</string>
 </resources>
 

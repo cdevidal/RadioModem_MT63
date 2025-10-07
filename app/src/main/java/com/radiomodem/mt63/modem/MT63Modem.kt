@@ -10,6 +10,8 @@ import java.util.concurrent.ArrayBlockingQueue
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicBoolean
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 class MT63Modem(ctx: Context) {
     private fun erfc(x: Double): Double {
@@ -136,8 +138,8 @@ class MT63Modem(ctx: Context) {
             val frames = dem.demodulate(buf.copyOf(r))
             met.rxSpectrum = dem.lastSpectrum()
             val snrDb = dem.lastSnrDb(); met.snr = snrDb
-            val snrLin = kotlin.math.pow(10.0, snrDb/10.0)
-            met.ber = 0.5 * erfc(kotlin.math.sqrt(snrLin))
+            val snrLin = 10.0.pow(snrDb/10.0)
+            met.ber = 0.5 * erfc(sqrt(snrLin))
             if (frames.isNotEmpty()) {
                 for (kiss in frames) kissSink?.onKissBytesFromModem(kiss)
                 met.rxFramesOk += frames.size

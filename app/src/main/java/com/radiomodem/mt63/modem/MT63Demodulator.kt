@@ -30,7 +30,11 @@ class MT63Demodulator(
     private var fecEnabled = false
     private var interleaveMode = "legacy"
     fun setFec(enabled: Boolean, mode: String) { fecEnabled = enabled; interleaveMode = mode }
-    private fun permuteIndex(i: Int): Int = when (interleaveMode) { "short" -> (i * 5) and 63, "long" -> (i * 17 + 13) and 63, else -> i and 63 }
+    private fun permuteIndex(i: Int): Int = when (interleaveMode) {
+        "short" -> (i * 5) and 63
+        "long" -> (i * 17 + 13) and 63
+        else -> i and 63
+    }
     private fun invPermuteIndex(i: Int): Int = when (interleaveMode) {
         "short" -> ((i * 13) and 63) // inverse of *5 mod 64 is *13
         "long" -> (( (i - 13) and 63) * 49) and 63 // inverse of *17 mod 64 is *49
@@ -190,6 +194,7 @@ if (fecEnabled && carriersUsed >= 64) {
         }
         return out
     }
-}
+
     fun lastSpectrum(): FloatArray = lastSpec.copyOf()
+}
 

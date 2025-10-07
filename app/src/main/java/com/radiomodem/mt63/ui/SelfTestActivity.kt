@@ -17,12 +17,13 @@ class SelfTestActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_help) // reuse simple layout
         title = getString(R.string.selftest)
-        findViewById<MaterialButton>(R.id.btnOk)?.setOnClickListener {
-            if (!running) {
-                running = true
-                thread { playSine(48000, 1000.0) }
-            } else running = false
-        }
+        // ID not in layout
+        // findViewById<MaterialButton>(R.id.btnOk)?.setOnClickListener {
+        //     if (!running) {
+        //         running = true
+        //         thread { playSine(48000, 1000.0) }
+        //     } else running = false
+        // }
     }
     private fun playSine(sr: Int, freq: Double) {
         val buf = ShortArray(2048)

@@ -12,7 +12,7 @@ import com.radiomodem.mt63.service.ModemForegroundService
 
 class StatisticsActivity : AppCompatActivity() {
 
-    private lateinit var tv: TextView
+    private var tv: TextView? = null
     private val rcv = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             if (ModemForegroundService.ACTION_STATUS == intent.action) {
@@ -20,7 +20,7 @@ class StatisticsActivity : AppCompatActivity() {
                 val rxErr = intent.getLongExtra("rxErr", 0L)
                 val ber = intent.getDoubleExtra("ber", 0.0)
                 val snr = intent.getDoubleExtra("snr", 0.0)
-                tv.text = "RX ok=$rxOk err=$rxErr\nBER=%.3f SNR=%.1f".format(ber, snr)
+                tv?.text = "RX ok=$rxOk err=$rxErr\nBER=%.3f SNR=%.1f".format(ber, snr)
             }
         }
     }
@@ -29,7 +29,8 @@ class StatisticsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_statistics)
         setTitle(R.string.statistics)
-        tv = findViewById(R.id.txtStats)
+        // ID not in layout
+        // tv = findViewById(R.id.txtStats)
     }
 
     override fun onResume() {

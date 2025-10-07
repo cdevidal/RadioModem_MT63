@@ -152,5 +152,7 @@
     <string name="selftest">Самотест</string>
     <string name="spectrum">Спектр</string>
     <string name="rx_scope">Осциллограф RX</string>
+    <string name="export_log">Экспорт журнала</string>
+    <string name="statistics">Статистика</string>
 </resources>
 
