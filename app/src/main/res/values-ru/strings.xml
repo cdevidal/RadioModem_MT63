@@ -132,6 +132,7 @@
     <string name="profile_apply_confirm_msg">Будут установлены значения FFT, CP, Carriers, Pilots, PLL, Soft-FEC, Interleave и TX delay/tail согласно профилю.</string>
     <string name="profile_apply">Применить</string>
     <string name="profile_cancel">Отмена</string>
+    <string name="stats">Статистика</string>
     <string name="help">Справка</string>
     <string name="help_title">Справка / FAQ</string>
     <string name="help_menu">Справка</string>
