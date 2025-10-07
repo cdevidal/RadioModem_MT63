@@ -97,10 +97,6 @@
         <item>Short (64 симв.)</item>
         <item>Long (128 симв.)</item>
     </string-array>
-    <string-array name="interleave_values">
-        <item>short</item>
-        <item>long</item>
-    </string-array>
     <string name="pref_profile_title">Профиль MT63</string>
     <string name="pref_profile_summary">Набор FFT/CP/Carriers. Выберите сбалансированный/робастный/низкая задержка.</string>
     <string name="pref_fft_title">Размер FFT</string>

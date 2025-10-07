@@ -84,9 +84,5 @@
         <item>Short (64 sym)</item>
         <item>Long (128 sym)</item>
     </string-array>
-    <string-array name="interleave_values">
-        <item>short</item>
-        <item>long</item>
-    </string-array>
 </resources>
 
