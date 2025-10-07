@@ -119,5 +119,8 @@
     <string name="pref_pll_summary">Phase-locked loop tracking bandwidth</string>
     <string name="pref_interleave_title">Interleave Mode</string>
     <string name="pref_interleave_summary">Short (64 sym, lower latency) or Long (128 sym, more robust)</string>
+
+    <!-- Profile Status -->
+    <string name="profile_status_line_custom">Custom</string>
 </resources>
 
