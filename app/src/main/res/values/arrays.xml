@@ -41,6 +41,17 @@
         <item>en</item>
         <item>ru</item>
     </string-array>
+
+    <string-array name="mt63_profiles_names">
+        <item>Balanced</item>
+        <item>Robust</item>
+        <item>Low-latency</item>
+    </string-array>
+    <string-array name="mt63_profiles_values">
+        <item>balanced</item>
+        <item>robust</item>
+        <item>lowlat</item>
+    </string-array>
 </resources>
 
 
