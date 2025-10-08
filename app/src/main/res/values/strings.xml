@@ -9,6 +9,7 @@
     <string name="service_channel_desc">Foreground audio modem service</string>
     <string name="notif_title">Modem63 service is active</string>
     <string name="notif_text">MT63 transmit/receive</string>
+    <string name="notif_running">Running</string>
 
     <string name="title_audio">Audio</string>
     <string name="title_mt63">MT63 Mode</string>
