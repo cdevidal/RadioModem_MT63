@@ -125,6 +125,20 @@
     <string name="profile_status_line_custom">Custom</string>
 
     <!-- Additional Preferences -->
+    <string name="pref_nodelay_title">TCP No Delay</string>
     <string name="pref_nodelay_summary">Disable Nagle\'s algorithm for TCP connections (lower latency)</string>
+    <string name="pref_keepalive_title">TCP Keep-Alive</string>
+    <string name="pref_keepalive_summary">Enable TCP keep-alive packets</string>
+    <string name="pref_maxframe_title">Max Frame Size</string>
+    <string name="pref_maxframe_summary">Maximum KISS frame size in bytes</string>
+    <string name="pref_softfec_title">Soft FEC</string>
+    <string name="pref_softfec_summary">Enable soft-decision forward error correction</string>
+    <string name="pref_theme_title">Theme</string>
+    <string name="pref_theme_summary">App appearance (System/Dark/Light)</string>
+    <string name="pref_language_title">Language</string>
+    <string name="pref_language_summary">App language (requires restart)</string>
+    <string name="title_decoder">Decoder Settings</string>
+    <string name="pref_mt63_fec_title">MT63 FEC</string>
+    <string name="pref_mt63_fec_summary">Hadamard-based soft decoding for robustness</string>
 </resources>
 
