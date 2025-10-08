@@ -123,5 +123,8 @@
     <!-- Profile Status -->
     <string name="profile_status_title">Profile Status</string>
     <string name="profile_status_line_custom">Custom</string>
+
+    <!-- Additional Preferences -->
+    <string name="pref_nodelay_summary">Disable Nagle\'s algorithm for TCP connections (lower latency)</string>
 </resources>
 
