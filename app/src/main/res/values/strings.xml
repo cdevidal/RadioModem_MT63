@@ -124,6 +124,8 @@
     <!-- Profile Status -->
     <string name="profile_status_title">Profile Status</string>
     <string name="profile_status_line_custom">Custom</string>
+    <string name="profile_status_line_modified">Modified (%1$s)</string>
+    <string name="profile_status_line_active">Active (%1$s)</string>
 
     <!-- Additional Preferences -->
     <string name="pref_nodelay_title">TCP No Delay</string>
@@ -141,5 +143,9 @@
     <string name="title_decoder">Decoder Settings</string>
     <string name="pref_mt63_fec_title">MT63 FEC</string>
     <string name="pref_mt63_fec_summary">Hadamard-based soft decoding for robustness</string>
+
+    <!-- UI -->
+    <string name="connection_help">Connection Help</string>
+    <string name="log_placeholder">No log entries yet</string>
 </resources>
 
